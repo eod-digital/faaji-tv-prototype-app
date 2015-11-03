@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #F5F5F5;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 100%;
+}
+
+.container-fluid {
+  margin: 5%;
+}
+
+.channel-picture {
+  margin: 2px 0px;
+}
+
+.channel-description {
+  font-size: 13px;
+  color: #363639;
+  font-weight: 300;
+}
+
+.video-title {
+  font-size: 13px;
+  color: #363639;
+  font-weight: 400;
+}
+
+.video-title-dynamic {
+font-size: 12px;
+  color: #363639;
+}
+
+.video-source {
+  font-size: 13px;
+  color: #363639;
+  font-weight: 300;
+}
+
+.video-source-dynamic {
+  font-size: 12px;
+  color: #363639;
+}
