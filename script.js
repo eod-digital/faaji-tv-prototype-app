@@ -11,7 +11,14 @@ function onYouTubeIframeAPIReady() {
     width: '640',
     playerVars: {
       listType:'playlist',
-      list: 'RDQ7QiLceJSLQ'
+      list: 'RDQ7QiLceJSLQ',
+      autoplay: 1,
+      disablekb: 1,
+      iv_load_policy: 3,
+      rel: 0,
+      showinfo: 0,
+      modestbranding: 1,
+      loop: 1
     },
     events: {
       'onReady': onPlayerReady,
@@ -21,7 +28,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 function onPlayerReady(event) {
-  event.target.playVideo();
+  event.target.mute();
 }
 
 function onPlayerStateChange(event) {
