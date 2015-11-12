@@ -10,7 +10,7 @@ body {
 }
 
 .container-fluid {
-  margin: 5%;
+  margin: 2% 0;
 }
 
 .channel-picture {
@@ -43,4 +43,16 @@ font-size: 12px;
 .video-source-dynamic {
   font-size: 12px;
   color: #363639;
+}
+
+.channel {
+  text-align: center;
+}
+
+.channels {
+  margin-top: 5px;
+}
+
+.channel-picture {
+  cursor: pointer;
 }
