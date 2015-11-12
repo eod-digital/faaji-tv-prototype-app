@@ -4,6 +4,7 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 var description = 'RMXO is a pan-African urban music channel showcasing talents from around the continent';
+var picture = 'photo1.jpg'
 
 document.addEventListener("DOMContentLoaded", onDocumentReady);
 
@@ -16,6 +17,7 @@ function onDocumentReady() {
         listType:'playlist',
       });
       description = channel['description'];
+      picture = channel['artwork'];
     }
   });
 }
@@ -51,6 +53,7 @@ function onPlayerStateChange(event) {
   document.querySelector('.video-title-dynamic').innerHTML = videoData.title
   document.querySelector('.video-source-dynamic').innerHTML = videoData.author
   document.querySelector('.channel-description').innerHTML = description;
+  document.querySelector('#main-picture').src = picture;
 }
 
 function getChannel(channel) {
