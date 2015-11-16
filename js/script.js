@@ -4,7 +4,7 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 var description = 'RMXO is a pan-African urban music channel showcasing talents from around the continent';
-var picture = 'photo1.jpg'
+var picture = 'images/channel-artworks/rmxo.jpg'
 
 document.addEventListener("DOMContentLoaded", onDocumentReady);
 
@@ -57,22 +57,27 @@ function onPlayerStateChange(event) {
 }
 
 function getChannel(channel) {
-  var channels = {
-    channel1: {
+    var channels = {
+    rmxo: {
       description: 'RMXO is a pan-African urban music channel showcasing talents from around the continent',
       playlist: 'RDQ7QiLceJSLQ',
-      artwork: 'photo1.jpg'
+      artwork: 'images/channel-artworks/rmxo.jpg'
     },
-    channel2: {
+    popcorn: {
       description: 'Latest Nollywood movie drama',
       playlist: 'PLUHuM0g065apVLOK7Co7xlg2BvPadrvu5',
-      artwork: 'photo2.jpg'
+      artwork: 'images/channel-artworks/popcorn.jpg'
     },
-    channel3: {
-      description: 'Now You Are Laughing :)',
-      playlist: 'PLIIb1mxUqZ9MD9rDZCam1BmXsHgtORvpV',
-      artwork: 'photo3.jpg'
-    }
+    tedTalk: {
+      description: 'TED Talks shares the best ideas from the TED Conference with the world.',
+      playlist: 'PLOGi5-fAu8bHnnG6iuIUMOuZRaBKEal7O',
+      artwork: 'images/channel-artworks/ted-talk.jpg'
+    },
+     nyal: {
+       description: 'Now You Are Laughing.',
+       playlist: 'PLoBNoZLQkrBYUpxcEEhxJxNESZtr3v19E',
+       artwork: 'images/channel-artworks/nyal.jpg'
+     }
   };
 
   return channels[channel];
